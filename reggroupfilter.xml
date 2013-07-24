@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="user">
+        <name>plg_reg_groupfilter</name>
+        <author>Ray Lawlor</author>
+        <creationDate>July 2013</creationDate>
+        <copyright>Copyright (C) 2013 Ray Lawlor @ WebCraftNi.com. All rights reserved.
+        </copyright>
+        <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+        <authorEmail>ray@webcraftni.com</authorEmail>
+        <authorUrl>http://www.zoomodsplus.com</authorUrl>
+        <version>1.0.0</version>
+        <description>PLG_REG_GROUPFILTER_XML_DESCRIPTION</description>
+        <files>
+                <filename plugin="reggroupfilter">reggroupfilter.php</filename>
+                <filename plugin="reggroupfilter">reggroupfilter.xml</filename>
+                <filename>index.html</filename>
+                <folder>language</folder>
+        </files>
+        <languages>
+                <language tag="en-GB">language/en-GB/en-GB.plg_user_reggroupfilter.ini</language>
+                <language tag="en-GB">language/en-GB/en-GB.plg_user_reggroupfilter.sys.ini</language>
+        </languages>
+        <config>
+                <fields name="params">
+ 
+                        <fieldset name="basic">
+                            <field name="email_1" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_1_LABEL"                                    
+                                />
+                                <field name="group_1" type="usergroup"                                      
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_1_LABEL"                                    
+                                />
+                                <field name="email_2" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_2_LABEL"                                    
+                                />
+                                <field name="group_2" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_2_LABEL"                                       
+                                />
+                                <field name="email_3" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_3_LABEL"                                    
+                                />
+                                <field name="group_3" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_3_LABEL"                                       
+                                />
+                                <field name="email_4" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_4_LABEL"                                    
+                                />
+                                <field name="group_4" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_4_LABEL"                                       
+                                />
+                                <field name="email_5" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_5_LABEL"                                    
+                                />
+                                <field name="group_5" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_5_LABEL"                                       
+                                />
+                                <field name="email_6" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_6_LABEL"                                    
+                                />
+                                <field name="group_6" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_6_LABEL"                                       
+                                />
+                                <field name="email_7" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_7_LABEL"                                    
+                                />
+                                <field name="group_7" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_7_LABEL"                                       
+                                />
+                                <field name="email_8" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_8_LABEL"                                    
+                                />
+                                <field name="group_8" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_8_LABEL"                                       
+                                />
+                                <field name="email_9" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_9_LABEL"                                    
+                                />
+                                <field name="group_9" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_9_LABEL"                                       
+                                />
+                                <field name="email_10" type="text"                                      
+                                        description="PLG_USER_REGGROUPFILTER_EMAIL_DESC"
+                                        default="@something.com"                                 
+                                        label="PLG_USER_REGGROUPFILTER_EMAIL_10_LABEL"                                    
+                                />
+                                <field name="group_10" type="usergroup"                                        
+                                        description="PLG_USER_REGGROUPFILTER_GROUP_DESC" default="2"
+                                        label="PLG_USER_REGGROUPFILTER_GROUP_10_LABEL"                                       
+                                />
+                        </fieldset>
+                </fields>
+        </config>
+</extension>
