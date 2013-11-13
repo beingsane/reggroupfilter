@@ -6,7 +6,6 @@
  * @copyright   Copyright (C) 2013 Ray Lawlor. All rights reserved.
  * @license     GNU General Public License version 2 or later.
  */
-
 // no direct access
 defined('_JEXEC') or die('');
 
@@ -33,7 +32,6 @@ class plgUserRegGroupFilter extends JPlugin {
         if ($isnew) {
 
             //set variables
-            
             //get the user from the function argument
             $email = $user['email'];
             $email = strstr($email, '@');
@@ -76,30 +74,32 @@ class plgUserRegGroupFilter extends JPlugin {
                 "$email9" => "$group9",
                 "$email10" => "$group10",
             );
+            if (array_key_exists($email, $list)) {
 
-            //get id from the function argument
-            $user_id = $user['id'];
-            //get the right group from the ass-array based on the email entered
-            $group = $list["$email"];
 
-            //connect to DB object
-            $db = JFactory::getDbo();
-            $query = $db->getQuery(true);
+                //get id from the function argument
+                $user_id = $user['id'];
+                //get the right group from the ass-array based on the email entered
+                $group = $list["$email"];
 
-            //set the fields for the UPDATE query
-            $fields = array(
-                "user_id = $user_id",
-                "group_id = $group"
-            );
-            //set the overall query
-            $query->update($db->quoteName('#__user_usergroup_map'))->set($fields)->where("user_id=$user_id");
-            $db->setQuery($query);
+                //connect to DB object
+                $db = JFactory::getDbo();
+                $query = $db->getQuery(true);
 
-            //execute the query
-            $db->execute();
+                //set the fields for the UPDATE query
+                $fields = array(
+                    "user_id = $user_id",
+                    "group_id = $group"
+                );
+                //set the overall query
+                $query->update($db->quoteName('#__user_usergroup_map'))->set($fields)->where("user_id=$user_id");
+                $db->setQuery($query);
+
+                //execute the query
+                $db->execute();
+            }
         }
     }
 
 }
 ?>
-
